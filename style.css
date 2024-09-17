@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    margin:10px;
+    padding:0px;
+    
+}
+
+html {
+    font-family: 'Garamond';
+}
+
+body {
+     /* background-image: url('softballbackground.png'); */
+    background-color: rgb(237, 238, 240);
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.myDiv1 {
+    color: black;
+}
+
+section{
+    border:3px solid black;
+    background-color: orange;
+    border-radius: 15px;
+    width: 250px;
+    padding-top: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0px;
+}
+
+.Roster{
+    color:black;
+    text-align: left;
+    position: absolute;
+    top: 320px;
+        
+}
+
+.Practice{
+    color:black;
+    text-align: left;
+    width: 600px;
+    position: absolute;
+    top: 320px;
+    left: 300px;
+    p {color:black};
+   
+}
+
+.Games{
+    color:black;
+    text-align: left;
+    position: absolute;
+    top: 320px;
+    left: 930px;
+    p{color:black};
+  }    
+
+  .Results{
+    color:black;
+    text-align: left;
+    position: absolute;
+    top: 570px;
+    p{color:black};
+  }  
+
+  .undermain {
+    position: absolute;
+    top: 750px;
+    color: black;
+  }
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+dialog {
+    border: 5px outset red;
+    font-family: cursive;
+    margin: auto;
+    padding: 5px;
+}
+
+th {
+    color: black;
+    text-align: center;
+    background-color: white;
+    
+}
+
+td {
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+a:hover{
+    color:darkorange;
+}
+
+.kidnames{
+    color:black;
+}
+
+p{
+    color:black;
+}
+
+.twisters{
+    color:black;
+    font-weight: bold;
+}
+
+footer {
+    position:fixed;
+    bottom: 0;
+}
