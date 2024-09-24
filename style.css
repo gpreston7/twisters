@@ -20,7 +20,34 @@ body {
     /* background-repeat: repeat;
     background-size: cover; */
 
+.pichead {
+    display: flex;
+    max-height: 300px;
 
+}
+
+.center {
+    display: flex;
+    width: 50%;
+    height: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
+    /* width: 50%; */
+
+    padding-right: 10px;
+    
+}
+
+.ball {
+    display: flex;
+    width: 50%;
+    height: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
+    /* width: 50%; */
+
+    padding-left: 10px;
+}
     
 }
 
@@ -32,12 +59,12 @@ body {
 main {
     display: grid;
     grid-template-rows: repeat(5 20%);
-    grid-template-columns: 30% 40% 30%;
+    grid-template-columns: 35% 50% 15%;
     max-width: 1500px;
     justify-content: center;
     grid-template-areas: "schedule news roster"
     "schedule news roster"
-    "results news roster"
+    "schedule news roster"
     "links links links"
     "links links links";
 }
@@ -86,13 +113,6 @@ main {
     flex-shrink: 2;     */
 }    
 
-#Results{
-    color:black;
-    text-align: left;
-    /* grid-area: 2 / 1 / span 2 / 1; */
-    grid-area: results;
-}  
-
 #undermain{
     color:black;
     text-align: left;
@@ -110,6 +130,36 @@ iframe {
     align-content: right;
 }
 
+.schedulebox .game {
+    display: flex;
+    flex-wrap: nowrap;
+    border: 1px solid lightgray;
+    margin: 5px 0;
+    
+    /* grid-template-rows: 50px 50px;
+    grid-template-columns: 2fr 1fr; */
+}
+
+
+.oppy {
+    display: flex;
+    flex: 50%;
+    flex-wrap: wrap;
+}
+
+.time {
+    display: flex;
+    flex: 30%;
+    flex-wrap: nowrap;
+}
+
+.field {
+    display: flex;
+    flex: 20%;
+    flex-wrap: nowrap;
+
+}
+
 /* section{
     border:3px solid black;
     background-color: orange;
@@ -121,15 +171,7 @@ iframe {
     margin: 0px;
 } */
 
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    position: relative;
-    top: 0px;
-    left: 0px;
-}
+
 
 dialog {
     border: 5px outset red;
@@ -156,6 +198,7 @@ a:hover{
 
 .kidnames{
     color:black;
+    font-size:larger;
 }
 
 p{
@@ -168,6 +211,6 @@ p{
 }
 
 footer {
-    position:fixed;
+    position:relative;
     bottom: 0;
 }
