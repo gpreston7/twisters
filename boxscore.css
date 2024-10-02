@@ -1,3 +1,76 @@
+* {
+    /* box-sizing: border-box; */
+    margin:10px;
+    padding:0px;
+    
+}
+
+html {
+    font-family: 'Garamond';
+    font-size: 16px;
+}
+
+.toplinks {
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: black;
+
+}
+
+button {
+    display: inline;
+    font-size: 1rem;
+    border-color: blue;
+    width: auto;
+    color: darkblue;
+    background-color: lightblue;
+    a {
+        text-decoration: none;
+    }  
+}  
+
+body {
+    background-color: rgb(237, 238, 240);
+    max-width: 1500px;
+    justify-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.pichead {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.ball1 {
+    display: flex;
+    width: 33%;
+    height: 300px;
+    position: relative;
+    left: 0;
+    margin-left: 0;
+}
+
+.center {
+    display: flex;
+    width: 30%;
+    height: 300px;
+    position: relative;
+}
+
+.ball2 {
+    display: flex;
+    width: 33%;
+    height: 300px;
+    position: relative;
+    right: 0;
+    margin-right: 0;
+}
+
 table {
     font-size: 80px;
     border: 5px outset red;

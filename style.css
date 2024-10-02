@@ -10,13 +10,28 @@ html {
     font-size: 16px;
 }
 
+body {
+    background-color: rgb(237, 238, 240);
+    justify-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.wrapper {
+    background-color: rgb(237, 238, 240);
+    padding-top: 1px;
+    position: sticky;
+    width: 95%;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    justify-content: 95%;
+    z-index: 1;
+    top: 0;
+ }
+
 .toplinks {
     display: flex;
-    position: sticky;
-    top: 0;
-    z-index: 1;
     background-color: black;
-
 }
 
 button {
@@ -31,30 +46,18 @@ button {
     }  
 }  
 
-body {
-    background-color: rgb(237, 238, 240);
-    max-width: 1500px;
-    justify-items: center;
-    justify-content: center;
-    margin: auto;
-}
-
 .pichead {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    width: 95%;
+    justify-content: space-around;
 
-}
-
-video {
-    width: 90%;
-    height: auto;
 }
 
 .ball1 {
     display: flex;
-    width: 33%;
-    height: 300px;
+    width: 37%;
+    height: auto;
     position: relative;
     left: 0;
     margin-left: 0;
@@ -62,19 +65,25 @@ video {
 
 .center {
     display: flex;
-    width: 30%;
-    height: 300px;
+    width: 22%;
+    height: auto;
     position: relative;
 }
 
 .ball2 {
     display: flex;
-    width: 33%;
-    height: 300px;
+    width: 37%;
+    height: auto;
     position: relative;
     right: 0;
     margin-right: 0;
 
+}
+
+video {
+    width: 90%;
+    height: auto;
+    
 }
     
 .myDiv1 {
@@ -87,7 +96,7 @@ main {
     display: grid;
     grid-template-rows: repeat(5 20%);
     grid-template-columns: 40% 45% 15%;
-    max-width: 1500px;
+    width: 95%;
     justify-content: center;
     grid-template-areas: "schedule news roster"
     "schedule news roster"
@@ -104,92 +113,19 @@ main {
     padding-left: 10px;
     padding-right: 10px;
     margin: 5px;
-
-    
-}
+ }
 
 #Roster{
     color:black;
     text-align: left; 
     grid-area: roster;
-    /* grid-column: 3 / span 1;
-    grid-row: 1 / span 3; */
-    /* width: 150px;
-    flex-grow:0.5;
-    max-width: 200px;  
-    flex-shrink: 1;   */
 }
 
 #Notes{
     color:black;
     text-align: left;
     grid-area: news;
-    /* grid-area: 1 / 2 / span 3 / 2;  */
-    /* width: 400px;
-    flex-grow: 1; 
-    max-width:700px; */
 }
-
-@media only screen and (max-width: 1200px) {
-    #Roster {
-        display:none;
-    }
-    .ball1 {
-        display: flex;
-        width: 50%;
-    }
-    .ball2 {
-        display:none;
-    }
-    .center {
-        display: flex;
-        width: 50%;
-    }
-    main {
-        display: grid;
-        grid-template-rows: repeat(5 20%);
-        grid-template-columns: 50% 50%;
-        width: 100%;
-        justify-content: center;
-        grid-template-areas: "schedule news"
-        "schedule news"
-        "schedule news"
-        "links news"
-        "links news";
-    }
-}
-
-@media (max-width: 800px) {
-    #Roster {
-        display:none;
-    }
-    .ball1 {
-        display: none;
-    }
-    .ball2 {
-        display:none;
-    }
-    .center {
-        display: flex;
-        width: 100%;
-    }
-    #Games {
-        display: none;
-    }
-    main {
-        display: grid;
-        grid-template-rows: repeat(5 20%);
-        grid-template-columns: 100%;
-        width: 100%;
-        justify-content: center;
-        grid-template-areas: "news"
-        "news"
-        "news"
-        "links"
-        "links";
-    }
-}
-
 
 #Games{
     color:black;
@@ -200,6 +136,62 @@ main {
 #undermain{
     grid-area: links;
 } 
+
+@media screen and (max-width: 1200px) {
+    .ball1 {
+        display: flex;
+        width: 63%;
+        height: auto;
+        max-height: 300px;
+    }
+    .ball2 {
+        display:none;
+    }
+    .center {
+        display: flex;
+        width: 37%;
+        height: auto;
+        max-height: 300px;
+    }
+    main {
+        display: grid;
+        grid-template-rows: repeat(5 20%);
+        grid-template-columns: 50% 50%;
+        width: 100%;
+        justify-content: center;
+        grid-template-areas: "schedule news"
+        "schedule news"
+        "schedule news"
+        "links roster"
+        "links roster";
+    }
+}
+
+@media (max-width: 800px) {
+
+    .ball1 {
+        display: none;
+    }
+    .ball2 {
+        display:none;
+    }
+    .center {
+        display: flex;
+        width: 100%;
+    }
+    main {
+        display: grid;
+        grid-template-rows: repeat(5 20%);
+        grid-template-columns: 100%;
+        width: 100%;
+        justify-content: center;
+        grid-template-areas: "news"
+        "schedule"
+        "roster"
+        "links"
+        "links";
+    }
+}
 
 iframe {
     display: flex;
@@ -220,7 +212,7 @@ iframe {
         text-decoration: none;
     }
     a:active {
-        top: 10px;
+        top: 1px;
     }
     a:hover {
         color:black;
