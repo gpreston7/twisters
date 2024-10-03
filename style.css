@@ -179,7 +179,7 @@ main {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 630px) {
     .pichead {
         justify-content: space-around;
     }
@@ -226,12 +226,12 @@ main {
 
 .oppy {
     display: flex;
-    flex: 40%;
+    flex: 42%;
 }
 
 .time {
     display: flex;
-    flex: 30%;
+    flex: 35%;
     a {
         text-align: left;
     }
@@ -239,7 +239,7 @@ main {
 
 .field {
     display: flex;
-    flex: 30%;
+    flex: 23%;
 }
 
 dialog {
