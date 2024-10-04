@@ -274,6 +274,10 @@ td {
     text-align: center;
 }
 
+.team {
+    text-align: left;
+}
+
 a:hover{
     color:white;
 }
@@ -299,6 +303,26 @@ footer {
 }
 
 .twisters{
+    margin: 0;
+    padding: 0;
+}
+
+.bluethunder{
+    margin: 0;
+    padding: 0;
+}
+
+.goldengirls{
+    margin: 0;
+    padding: 0;
+}
+
+.unicorns{
+    margin: 0;
+    padding: 0;
+}
+
+.batitudes{
     margin: 0;
     padding: 0;
 }

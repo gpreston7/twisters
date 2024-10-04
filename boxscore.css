@@ -1,6 +1,6 @@
 * {
     /* box-sizing: border-box; */
-    margin:10px;
+    margin:5px;
     padding:0px;
     
 }
@@ -10,13 +10,29 @@ html {
     font-size: 16px;
 }
 
+body {
+    background-color: rgb(237, 238, 240);
+    justify-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.wrapper {
+    background-color: rgb(237, 238, 240);
+    padding-top: 1px;
+    position: sticky;
+    width: 95%;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    justify-content: 95%;
+    z-index: 1;
+    top: 0;
+ }
+
 .toplinks {
     display: flex;
-    position: sticky;
-    top: 0;
-    z-index: 1;
+    flex-wrap: wrap;
     background-color: black;
-
 }
 
 button {
@@ -24,32 +40,25 @@ button {
     font-size: 1rem;
     border-color: blue;
     width: auto;
-    color: darkblue;
     background-color: lightblue;
     a {
+        color: black;
         text-decoration: none;
     }  
 }  
 
-body {
-    background-color: rgb(237, 238, 240);
-    max-width: 1500px;
-    justify-items: center;
-    justify-content: center;
-    margin: auto;
-}
-
 .pichead {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    width: 95%;
+    justify-content: space-around;
 
 }
 
 .ball1 {
     display: flex;
-    width: 33%;
-    height: 300px;
+    width: 37%;
+    height: auto;
     position: relative;
     left: 0;
     margin-left: 0;
@@ -57,24 +66,225 @@ body {
 
 .center {
     display: flex;
-    width: 30%;
-    height: 300px;
+    width: 22%;
+    height: auto;
     position: relative;
 }
 
 .ball2 {
     display: flex;
-    width: 33%;
-    height: 300px;
+    width: 37%;
+    height: auto;
     position: relative;
     right: 0;
     margin-right: 0;
 }
 
-table {
-    font-size: 80px;
+video {
+    width: 90%;
+    height: auto;
+}
+    
+.myDiv1 {
+    color: black;
+    text-align: center;
+    font-size: 1.05rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 100%;
+    width: 95%;
+    justify-content: center;
+    grid-template-areas: "col-1";
+
+} 
+
+.col-1 {
+    grid-area: col-1;
+}
+
+
+.container {
+    border:1px solid black;
+    background-color: white;
+    border-radius: 15px;
+    padding-top: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 5px;
+    overflow: hidden;
+ }
+
+#Games {
+    color:black;
+    text-align: left;
+    grid-area: games;
+}    
+
+@media screen and (max-width: 1000px) {
+    
+    .pichead {
+        justify-content: space-around;
+    }
+    .ball1 {
+        display: flex;
+        width: 63%;
+        height: auto;
+        max-height: 300px;
+    }
+    .ball2 {
+        display:none;
+    }
+    .center {
+        display: flex;
+        width: 37%;
+        height: auto;
+        max-height: 300px;
+    }
+    main {
+        display: grid;
+        grid-template-columns: 100%;
+        width: 100%;
+        justify-content: center;
+        margin: 2px;
+        grid-template-areas: "col-1";
+    }
+    .container {
+        margin: 2px;
+    }
+    
+}
+
+@media (max-width: 630px) {
+    .pichead {
+        justify-content: space-around;
+    }
+    .ball1 {
+        display: none;
+    }
+    .ball2 {
+        display:none;
+    }
+    .center {
+        display: flex;
+        width: 100%;
+    }
+    main {
+        display: grid;
+        /* grid-template-rows: repeat(5 20%); */
+        grid-template-columns: 100%;
+        width: 100%;
+        justify-content: center;
+        grid-template-areas: "col-1";
+    }
+    .container {
+        margin: 2px;
+    }
+}
+
+.game {
+    display: flex;
+    border: 1px solid lightgray;
+    margin: 0;
+    a {
+        color: red;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    a:active {
+        top: 1px;
+    }
+    a:hover {
+        color:black;
+    }
+}
+
+.oppy {
+    display: flex;
+    flex: 42%;
+}
+
+.time {
+    display: flex;
+    flex: 35%;
+    a {
+        text-align: left;
+    }
+}
+
+.field {
+    display: flex;
+    flex: 23%;
+}
+
+dialog {
     border: 5px outset red;
-    font-family: cursive;
     margin: auto;
     padding: 5px;
+}
+
+th {
+    color: black;
+    text-align: center;
+    background-color: white;    
+}
+
+td {
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+.team {
+    text-align: left;
+}
+
+a:hover{
+    color:white;
+}
+
+.kidnames{
+    color:black;
+    margin-left: 10px;
+}
+
+p{
+    color:black;
+}
+
+footer {
+    position:relative;
+    bottom: 0;
+
+}
+
+.legends{
+    margin: 0;
+    padding: 0;
+}
+
+.twisters{
+    margin: 0;
+    padding: 0;
+}
+
+.bluethunder{
+    margin: 0;
+    padding: 0;
+}
+
+.goldengirls{
+    margin: 0;
+    padding: 0;
+}
+
+.unicorns{
+    margin: 0;
+    padding: 0;
+}
+
+.batitudes{
+    margin: 0;
+    padding: 0;
 }
