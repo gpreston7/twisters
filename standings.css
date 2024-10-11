@@ -44,8 +44,8 @@ button {
     a {
         color: black;
         text-decoration: none;
-    } 
-}
+    }  
+}  
 
 .current {
     border-color: red;
@@ -102,37 +102,14 @@ button {
     right: 0;
     margin-right: 0;
 }
-
-video {
-    width: 90%;
-    height: auto;
-}
-    
-.myDiv1 {
-    color: black;
-    text-align: center;
-    font-size: 1.05rem;
-}
-
+ 
 main {
     display: grid;
-    grid-template-columns: 40% 35% 25%;
-    width: 95%;
+    grid-template-columns: 50%;
     justify-content: center;
-    grid-template-areas: "col-1 col-2 col-3";
-    /* grid-template-areas: "links notes roster"
-    "links notes roster"
-    "links notes standings"
-    "links notes leaders"
-    "links notes leaders"; */
-} 
+    grid-template-areas: "col-3";
+}
 
-.col-1 {
-    grid-area: col-1;
-}
-.col-2 {
-    grid-area: col-2;
-}
 .col-3 {
      grid-area: col-3;
 }
@@ -147,38 +124,12 @@ main {
     margin: 5px;
     overflow: hidden;
  }
-#Roster {
-    color:black;
-    text-align: left;
-    grid-area: roster; 
-}
-#Notes {
-    color:black;
-    text-align: left;
-    grid-area: notes;
-}
-#Games {
-    color:black;
-    text-align: left;
-    grid-area: games;
-}    
+
 #Standings {
     color:black;
     text-align: left;
     grid-area: standings;
 }
-#Leaders {
-    color:black;
-    text-align: left;
-    grid-area: leaders;
-}
-#undermain {
-    grid-area: links;
-    iframe {
-        display: flex;
-        align-content: left;
-    }
-} 
 
 @media screen and (max-width: 1000px) {
     
@@ -202,12 +153,11 @@ main {
     }
     main {
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 100%;
         width: 100%;
         justify-content: center;
         margin: 2px;
-        grid-template-areas: "col-1 col-2"
-        "col-3 col-2";
+        grid-template-areas: "col-3";
     }
     .container {
         margin: 2px;
@@ -231,58 +181,14 @@ main {
     }
     main {
         display: grid;
-        /* grid-template-rows: repeat(5 20%); */
         grid-template-columns: 100%;
         width: 100%;
         justify-content: center;
-        grid-template-areas: "col-2"
-        "col-1"
-        "col-3";
+        grid-template-areas: "col-3";
     }
     .container {
         margin: 2px;
     }
-}
-
-.game {
-    display: flex;
-    border: 1px solid lightgray;
-    margin: 0;
-    a {
-        color: red;
-        font-weight: bold;
-        text-decoration: none;
-    }
-    a:active {
-        top: 1px;
-    }
-    a:hover {
-        color:black;
-    }
-}
-
-.oppy {
-    display: flex;
-    flex: 42%;
-}
-
-.time {
-    display: flex;
-    flex: 35%;
-    a {
-        text-align: left;
-    }
-}
-
-.field {
-    display: flex;
-    flex: 23%;
-}
-
-dialog {
-    border: 5px outset red;
-    margin: auto;
-    padding: 5px;
 }
 
 th {
@@ -303,11 +209,6 @@ td {
 
 a:hover{
     color:white;
-}
-
-.kidnames{
-    color:black;
-    margin-left: 10px;
 }
 
 p{

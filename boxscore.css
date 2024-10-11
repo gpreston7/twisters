@@ -47,6 +47,29 @@ button {
     }  
 }  
 
+.current {
+    border-color: red;
+    font-weight: bolder;
+} 
+
+.teamheader {
+    display: grid;
+    justify-content: left;
+    grid-template-areas: "logo head1"
+    "logo head2";
+    h1 {
+        grid-area: head1;
+        color: darkred;
+    }
+    h2 {
+        grid-area: head2;
+    }
+    .logo {
+        grid-area: logo;
+        width: 60px;
+    }
+}
+
 .pichead {
     display: flex;
     align-items: center;
@@ -78,17 +101,6 @@ button {
     position: relative;
     right: 0;
     margin-right: 0;
-}
-
-video {
-    width: 90%;
-    height: auto;
-}
-    
-.myDiv1 {
-    color: black;
-    text-align: center;
-    font-size: 1.05rem;
 }
 
 main {
@@ -172,7 +184,6 @@ main {
     }
     main {
         display: grid;
-        /* grid-template-rows: repeat(5 20%); */
         grid-template-columns: 100%;
         width: 100%;
         justify-content: center;
@@ -187,6 +198,7 @@ main {
     display: flex;
     border: 1px solid lightgray;
     margin: 0;
+    align-items: center;
     a {
         color: red;
         font-weight: bold;
@@ -202,12 +214,13 @@ main {
 
 .oppy {
     display: flex;
-    flex: 42%;
+    flex: 30%;
 }
 
 .time {
     display: flex;
-    flex: 35%;
+    flex: 20%;
+    justify-content: center;
     a {
         text-align: left;
     }
@@ -215,7 +228,23 @@ main {
 
 .field {
     display: flex;
-    flex: 23%;
+    flex: 20%;
+    align-items: center;
+    justify-content: center;
+}
+
+.record {
+    display: flex;
+    flex: 10%;
+    align-items: center;
+    justify-content: center;
+}
+
+.gameball {
+    display: flex;
+    flex: 20%;
+    align-items: center;
+    justify-content: center;
 }
 
 dialog {
