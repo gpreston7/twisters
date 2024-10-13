@@ -70,43 +70,10 @@ button {
     }
 }
 
-.pichead {
-    display: flex;
-    align-items: center;
-    width: 95%;
-    justify-content: space-around;
-
-}
-
-.ball1 {
-    display: flex;
-    width: 37%;
-    height: auto;
-    position: relative;
-    left: 0;
-    margin-left: 0;
-}
-
-.center {
-    display: flex;
-    width: 22%;
-    height: auto;
-    position: relative;
-}
-
-.ball2 {
-    display: flex;
-    width: 37%;
-    height: auto;
-    position: relative;
-    right: 0;
-    margin-right: 0;
-}
- 
 main {
     display: grid;
     grid-template-columns: 50%;
-    justify-content: center;
+    justify-content: left;
     grid-template-areas: "col-3";
 }
 
@@ -123,6 +90,7 @@ main {
     padding-right: 5px;
     margin: 5px;
     overflow: hidden;
+    width: fit-content;
  }
 
 #Standings {
@@ -132,25 +100,6 @@ main {
 }
 
 @media screen and (max-width: 1000px) {
-    
-    .pichead {
-        justify-content: space-around;
-    }
-    .ball1 {
-        display: flex;
-        width: 63%;
-        height: auto;
-        max-height: 300px;
-    }
-    .ball2 {
-        display:none;
-    }
-    .center {
-        display: flex;
-        width: 37%;
-        height: auto;
-        max-height: 300px;
-    }
     main {
         display: grid;
         grid-template-columns: 100%;
@@ -166,19 +115,6 @@ main {
 }
 
 @media (max-width: 630px) {
-    .pichead {
-        justify-content: space-around;
-    }
-    .ball1 {
-        display: none;
-    }
-    .ball2 {
-        display:none;
-    }
-    .center {
-        display: flex;
-        width: 100%;
-    }
     main {
         display: grid;
         grid-template-columns: 100%;
@@ -191,14 +127,28 @@ main {
     }
 }
 
+table {
+    width: fit-content;
+    th, td {
+        width: fit-content;
+        padding: 5px;
+    }
+}
+
+tr:nth-child(odd) {
+    background-color: white;
+}
+
+tr:nth-child(even) {
+    background-color: lightgray;
+}
+
 th {
     color: black;
-    text-align: center;
-    background-color: white;    
+    text-align: center;  
 }
 
 td {
-    background-color: white;
     color: black;
     text-align: center;
 }
@@ -218,7 +168,6 @@ p{
 footer {
     position:relative;
     bottom: 0;
-
 }
 
 .legends{

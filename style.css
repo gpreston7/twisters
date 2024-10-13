@@ -1,5 +1,4 @@
 * {
-    /* box-sizing: border-box; */
     margin:5px;
     padding:0px;
     
@@ -70,61 +69,18 @@ button {
     }
 }
 
-.pichead {
-    display: flex;
-    align-items: center;
-    width: 95%;
-    justify-content: space-around;
-
-}
-
-.ball1 {
-    display: flex;
-    width: 37%;
-    height: auto;
-    position: relative;
-    left: 0;
-    margin-left: 0;
-}
-
-.center {
-    display: flex;
-    width: 22%;
-    height: auto;
-    position: relative;
-}
-
-.ball2 {
-    display: flex;
-    width: 37%;
-    height: auto;
-    position: relative;
-    right: 0;
-    margin-right: 0;
-}
-
 video {
     width: 90%;
     height: auto;
 }
     
-.myDiv1 {
-    color: black;
-    text-align: center;
-    font-size: 1.05rem;
-}
-
 main {
     display: grid;
     grid-template-columns: 40% 35% 25%;
     width: 95%;
     justify-content: center;
     grid-template-areas: "col-1 col-2 col-3";
-    /* grid-template-areas: "links notes roster"
-    "links notes roster"
-    "links notes standings"
-    "links notes leaders"
-    "links notes leaders"; */
+    max-width: 1500px;
 } 
 
 .col-1 {
@@ -134,7 +90,7 @@ main {
     grid-area: col-2;
 }
 .col-3 {
-     grid-area: col-3;
+    grid-area: col-3;
 }
 
 .container {
@@ -146,32 +102,52 @@ main {
     padding-right: 5px;
     margin: 5px;
     overflow: hidden;
- }
+}
+
 #Roster {
     color:black;
     text-align: left;
     grid-area: roster; 
 }
+
 #Notes {
     color:black;
     text-align: left;
     grid-area: notes;
 }
+
 #Games {
     color:black;
     text-align: left;
     grid-area: games;
 }    
+
 #Standings {
     color:black;
     text-align: left;
     grid-area: standings;
+    table {
+        width: fit-content;
+    }
+    td,th {
+        padding: 5px;
+    }
 }
+
 #Leaders {
     color:black;
     text-align: left;
     grid-area: leaders;
+    table {
+        width: fit-content;
+    }
+    td, th {
+        text-align: left;
+        padding: 5px;
+        padding-right: 15px;
+    }
 }
+
 #undermain {
     grid-area: links;
     iframe {
@@ -181,25 +157,6 @@ main {
 } 
 
 @media screen and (max-width: 1000px) {
-    
-    .pichead {
-        justify-content: space-around;
-    }
-    .ball1 {
-        display: flex;
-        width: 63%;
-        height: auto;
-        max-height: 300px;
-    }
-    .ball2 {
-        display:none;
-    }
-    .center {
-        display: flex;
-        width: 37%;
-        height: auto;
-        max-height: 300px;
-    }
     main {
         display: grid;
         grid-template-columns: 50% 50%;
@@ -216,19 +173,6 @@ main {
 }
 
 @media (max-width: 630px) {
-    .pichead {
-        justify-content: space-around;
-    }
-    .ball1 {
-        display: none;
-    }
-    .ball2 {
-        display:none;
-    }
-    .center {
-        display: flex;
-        width: 100%;
-    }
     main {
         display: grid;
         /* grid-template-rows: repeat(5 20%); */
@@ -279,12 +223,6 @@ main {
     flex: 23%;
 }
 
-dialog {
-    border: 5px outset red;
-    margin: auto;
-    padding: 5px;
-}
-
 th {
     color: black;
     text-align: center;
@@ -317,7 +255,6 @@ p{
 footer {
     position:relative;
     bottom: 0;
-
 }
 
 .legends{
