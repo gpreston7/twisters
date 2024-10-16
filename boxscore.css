@@ -156,16 +156,17 @@ main {
 
 .time {
     display: flex;
-    flex: 20%;
+    flex: 25%;
     justify-content: center;
+    text-align: center;
     a {
-        text-align: left;
+        text-align: center;
     }
 }
 
 .field {
     display: flex;
-    flex: 20%;
+    flex: 15%;
     align-items: center;
     justify-content: center;
 }

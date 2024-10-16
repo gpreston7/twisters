@@ -14,7 +14,7 @@ body {
     background-color: rgb(237, 238, 240);
     justify-items: center;
     justify-content: center;
-    margin: auto;
+
 }
 
 .wrapper {
@@ -24,7 +24,6 @@ body {
     width: min(100%, 1000px);
     margin-top: 1px;
     margin-bottom: 1px;
-    justify-content: 95%;
     z-index: 1;
     top: 0;
  }
@@ -93,10 +92,6 @@ main {
     border:1px solid black;
     background-color: white;
     border-radius: 15px;
-    padding-top: 0;
-    padding-left: 5px;
-    padding-right: 5px;
-    margin: 5px;
     overflow: hidden;
     width: fit-content;
  }
@@ -107,13 +102,8 @@ main {
         grid-template-columns: 100%;
         width: 100%;
         justify-content: center;
-        margin: 2px;
         grid-template-areas: "col-3";
-    }
-    .container {
-        margin: 2px;
-    }
-    
+    } 
 }
 
 @media (max-width: 630px) {
@@ -123,9 +113,6 @@ main {
         width: 100%;
         justify-content: center;
         grid-template-areas: "col-3";
-    }
-    .container {
-        margin: 2px;
     }
 }
 
