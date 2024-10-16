@@ -110,7 +110,7 @@ main {
         grid-template-areas: "col-3";
     }
     .bigname {
-        overflow: hidden;
+        font-size: clamp(6px, 10px, 16px);
     }
 }
 
