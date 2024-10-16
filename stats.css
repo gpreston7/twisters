@@ -67,12 +67,7 @@ button {
         width: 60px;
     }
 }
-
-video {
-    width: 90%;
-    height: auto;
-}
-    
+  
 main {
     display: grid;
     grid-template-columns: 100%;
@@ -113,6 +108,9 @@ main {
         width: 100%;
         justify-content: center;
         grid-template-areas: "col-3";
+    }
+    .bigname {
+        overflow: hidden;
     }
 }
 
