@@ -21,7 +21,7 @@ body {
     background-color: rgb(237, 238, 240);
     padding-top: 1px;
     position: sticky;
-    width: 95%;
+    width: min(100%, 1000px);
     margin-top: 1px;
     margin-bottom: 1px;
     justify-content: 95%;
@@ -79,6 +79,9 @@ main {
 
 .col-3 {
      grid-area: col-3;
+     h2 {
+        text-align: center;
+     }
 }
 
 .container {

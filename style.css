@@ -1,34 +1,51 @@
 * {
     margin:5px;
     padding:0px;
-    
 }
 
 html {
     font-family: 'Garamond';
-    font-size: 16px;
+    /* font-size: 16px; BEST PRACTICE IS NOT TO DEFINE FONT SIZE BUT TO ALLOW BROWSER TO DO SO. USE REM/EM FOR FONT SIZE IN SELECTORS*/ 
 }
 
 body {
     background-color: rgb(237, 238, 240);
     justify-items: center;
     justify-content: center;
-    margin: auto;
 }
 
 .wrapper {
     background-color: rgb(237, 238, 240);
-    padding-top: 1px;
+    padding: 0;
+    margin: 0;
     position: sticky;
-    width: 95%;
-    margin-top: 1px;
-    margin-bottom: 1px;
-    justify-content: 95%;
+    width: min(100%, 1500px);
     z-index: 1;
     top: 0;
  }
 
-.toplinks {
+ .teamheader {
+    display: grid;
+    justify-content: left;
+    grid-template-areas: "logo head1"
+    "logo head2";
+    width: min(100%, 1500px);
+    padding:0;
+    margin:0;
+    h1 {
+        grid-area: head1;
+        color: darkred;
+    }
+    h2 {
+        grid-area: head2;
+    }
+    .logo {
+        grid-area: logo;
+        width: 60px;
+    }
+}
+
+ .toplinks {
     display: flex;
     flex-wrap: wrap;
     background-color: black;
@@ -51,24 +68,6 @@ button {
     font-weight: bolder;
 } 
 
-.teamheader {
-    display: grid;
-    justify-content: left;
-    grid-template-areas: "logo head1"
-    "logo head2";
-    h1 {
-        grid-area: head1;
-        color: darkred;
-    }
-    h2 {
-        grid-area: head2;
-    }
-    .logo {
-        grid-area: logo;
-        width: 60px;
-    }
-}
-
 video {
     width: 90%;
     height: auto;
@@ -77,10 +76,9 @@ video {
 main {
     display: grid;
     grid-template-columns: 40% 35% 25%;
-    width: 95%;
+    width: min(100%, 1500px);
     justify-content: center;
     grid-template-areas: "col-1 col-2 col-3";
-    max-width: 1500px;
 } 
 
 .col-1 {
@@ -160,24 +158,21 @@ main {
     main {
         display: grid;
         grid-template-columns: 50% 50%;
-        width: 100%;
+        width: min(100%,1000px);
         justify-content: center;
-        margin: 2px;
         grid-template-areas: "col-1 col-2"
         "col-3 col-2";
     }
     .container {
         margin: 2px;
     }
-    
 }
 
-@media (max-width: 630px) {
+@media screen and (max-width: 630px) {
     main {
         display: grid;
-        /* grid-template-rows: repeat(5 20%); */
         grid-template-columns: 100%;
-        width: 100%;
+        width: min(100%, 630px);
         justify-content: center;
         grid-template-areas: "col-2"
         "col-1"
@@ -196,6 +191,9 @@ main {
         color: red;
         font-weight: bold;
         text-decoration: none;
+    }
+    .tie {
+        color: darkgreen;
     }
     a:active {
         top: 1px;
@@ -250,6 +248,7 @@ a:hover{
 
 p{
     color:black;
+    line-height: 1.5;
 }
 
 footer {
