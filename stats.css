@@ -113,7 +113,7 @@ main {
         grid-template-areas: "col-3";
     }
     .bigname {
-        font-size: clamp(10px, 16px, 16px);
+        font-size: 10px;
     }
 }
 
